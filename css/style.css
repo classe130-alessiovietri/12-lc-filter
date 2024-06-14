@@ -11,10 +11,63 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* 
     GENERAL
 */
 .container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-col {
+    width: 33%;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.filter-grayscale {
+    filter: grayscale(100%);
+    /* filter: grayscale(0.8); */
+}
+
+.filter-sepia {
+    /* filter: sepia(100%); */
+    filter: sepia(0.8);
+}
+
+.filter-saturate {
+    filter: saturate(0.7);
+}
+
+.filter-opacity {
+    filter: opacity(0.7);
+}
+
+.filter-invert {
+    filter: invert(1);
+}
+
+.filter-brightness {
+    filter: brightness(.8);
+}
+
+.filter-hue-rotate {
+    filter: hue-rotate(90deg);
+}
+
+.filter-blur {
+    filter: blur(10px);
+}
+
+.filter-multiple {
+    filter: blur(10px) sepia(0.8) hue-rotate(90deg);
 }
